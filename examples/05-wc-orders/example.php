@@ -40,10 +40,6 @@ add_action('acp/data-sources/register', static function (DataSourceRegistry $reg
     $registry->register(new Entry($order_stats));
 
     // Step 3: Order product lookup (one row per line item; many rows per order).
-    // This table has a composite primary key (order_item_id, order_id), which
-    // the auto-detection cannot resolve. We build the Data Source directly and
-    // pass `order_item_id` as the identifier. `Facade\DataSource::from()` does
-    // not support this override.
     $order_products = new DataSource(
         new DataSourceId('wc_order_products'),
         Facade\Table::from('wp_wc_order_product_lookup', 'order_item_id'),
@@ -66,7 +62,7 @@ add_action('acp/data-sources/register', static function (DataSourceRegistry $reg
             // Table has_one: exactly one stats row per order (join on orders.id = stats.order_id).
             Facade\Relation\Table::has_one($order_stats, 'order_id', 'id', new Alias('wc_stats')),
 
-            // Table has_many: many line-item rows per order. Values get aggregated per order.
+            // Relation Column has_many: many product rows per order. Values get aggregated per order.
             Facade\Relation\Column::has_many($order_products, 'order_id', 'Product Stats', 'id'),
 
             // Attribute has_one: single configurable column for picking an order meta key.
