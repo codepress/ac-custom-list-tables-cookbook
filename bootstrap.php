@@ -4,11 +4,7 @@
  * This file controls which recipes are loaded. Comment out any `require` below
  * to disable that example. Each recipe is independent. You can enable just
  * one or all of them, in any combination.
- * All recipes register their Data Sources under the shared top-level admin
- * menu "DS Cookbook" so the WordPress sidebar stays tidy.
  */
-
-declare(strict_types=1);
 
 if ( ! defined('ABSPATH')) {
     exit;
@@ -22,10 +18,10 @@ if ( ! defined('ABSPATH')) {
  */
 add_action('admin_menu', static function (): void {
     add_menu_page(
-        'Datasources',
-        'Datasources',
+        'Cookbook',
+        'Custom List Tables Cookbook',
         'manage_options',
-        'ac-ds-cookbook',
+        'ac-custom-list-tables-cookbook',
         '__return_empty_string',
         'dashicons-book-alt',
         25

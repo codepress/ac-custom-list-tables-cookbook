@@ -1,7 +1,7 @@
-# AC Datasource Cookbook
+# Custom List Tables Cookbook
 
-A set of annotated code examples that show how to register custom
-**Data Sources** for [Admin Columns Pro](https://www.admincolumns.com/).
+A set of annotated code examples that show how to register 
+**Custom List Tables** for [Admin Columns](https://www.admincolumns.com/).
 
 Every folder under [`examples/`](./examples) is a self-contained example.
 Each folder has its own `readme.md` explaining what the example does and
@@ -12,14 +12,13 @@ the previous one.
 
 - WordPress 5.9 or later
 - PHP 7.4 or later
-- Admin Columns Pro
-- The **Data Sources** addon (bundled with ACP)
+- Admin Columns Pro 7.1 or newer
 
 ## Installation
 
 1. Copy or clone this directory into `wp-content/plugins/`.
-2. Activate **AC Datasource Cookbook** from the WordPress plugins screen.
-3. A **Datasources** item appears in the WordPress admin sidebar. Each
+2. Activate **Admin Columns - Custom List Tables Cookbook** from the WordPress plugins screen.
+3. A **Cookbook** item appears in the WordPress admin sidebar. Each
    enabled example shows up as a submenu below it.
 
 ## Enabling and disabling examples
