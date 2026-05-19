@@ -40,7 +40,7 @@ add_action('acp/data-sources/register', static function (DataSourceRegistry $reg
         Entry::create($data_source)
             ->set_submenu(
                 '02. Comments with readable labels',
-                'ac-ds-cookbook',
+                'ac-custom-list-tables-cookbook',
                 '02. Readable Column Labels'
             )
     );

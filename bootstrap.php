@@ -18,8 +18,8 @@ if ( ! defined('ABSPATH')) {
  */
 add_action('admin_menu', static function (): void {
     add_menu_page(
-        'Cookbook',
         'Custom List Tables Cookbook',
+        'Cookbook',
         'manage_options',
         'ac-custom-list-tables-cookbook',
         '__return_empty_string',

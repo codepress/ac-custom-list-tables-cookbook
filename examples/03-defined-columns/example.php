@@ -42,6 +42,6 @@ add_action('acp/data-sources/register', static function (DataSourceRegistry $reg
     );
 
     $registry->register(
-        Entry::create($data_source)->set_submenu('03. Defined Columns', 'ac-ds-cookbook')
+        Entry::create($data_source)->set_submenu('03. Defined Columns', 'ac-custom-list-tables-cookbook')
     );
 });

@@ -20,7 +20,7 @@ add_action('acp/data-sources/register', static function (DataSourceRegistry $reg
 
     $registry->register(
         Entry::create($data_source)
-            ->set_submenu('01. Simple Users', 'ac-ds-cookbook')
+            ->set_submenu('01. Simple Users', 'ac-custom-list-tables-cookbook')
     );
 
     // Or use this if you want a main menu item
