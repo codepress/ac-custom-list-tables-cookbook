@@ -67,6 +67,6 @@ add_action('acp/data-sources/register', static function (DataSourceRegistry $reg
     );
 
     $registry->register(
-        Entry::create($comments)->set_submenu('04. Comments with related Post', 'ac-custom-list-tables-cookbook')
+        Entry::create($comments)->set_submenu('Comments with related Post', 'ac-custom-list-tables-cookbook')
     );
 });

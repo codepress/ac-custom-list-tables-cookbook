@@ -77,6 +77,6 @@ add_action('acp/data-sources/register', static function (DataSourceRegistry $reg
     );
 
     $registry->register(
-        Entry::create($orders)->set_submenu('05. WooCommerce Orders', 'ac-custom-list-tables-cookbook')
+        Entry::create($orders)->set_submenu('WooCommerce Orders', 'ac-custom-list-tables-cookbook')
     );
 });
