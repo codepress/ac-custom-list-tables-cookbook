@@ -28,7 +28,7 @@ comment out the `require` lines for the examples you do not want to load:
 
 ```php
 require __DIR__ . '/examples/01-simple-users/example.php';
-// require __DIR__ . '/examples/02-posts-labels/example.php';
+// require __DIR__ . '/examples/02-readable-labels/example.php';
 require __DIR__ . '/examples/03-defined-columns/example.php';
 ```
 
@@ -39,7 +39,7 @@ Each example is independent. You can enable any combination.
 | #  | Example                                              | What it teaches                                                                |
 |----|------------------------------------------------------|--------------------------------------------------------------------------------|
 | 01 | [Simple Users](./examples/01-simple-users/)          | The minimum: register a table as a Data Source with no configuration.          |
-| 02 | [Posts Labels](./examples/02-posts-labels/)          | Human-readable column labels plus a couple of typed columns.                   |
+| 02 | [Readable Labels](./examples/02-readable-labels/)    | Human-readable column labels plus a couple of typed columns.                   |
 | 03 | [Defined Columns](./examples/03-defined-columns/)    | Declare columns explicitly and filter which columns are exposed.               |
 | 04 | [Table Relation](./examples/04-table-relation/)      | Join tables into a Data Source via `has_one` Table and Attribute relations.    |
 | 05 | [WooCommerce Orders](./examples/05-wc-orders/)       | Build a custom Orders screen combining four WooCommerce tables.                |

@@ -13,7 +13,7 @@ if ( ! defined('ABSPATH')) {
 /*
  * Register the top-level admin menu that all recipes attach to.
  *
- * We register an empty page here. Each recipe calls `set_submenu('…', 'ac-ds-cookbook')`
+ * We register an empty page here. Each recipe calls `set_submenu('…', 'ac-custom-list-tables-cookbook')`
  * on its Entry so WordPress places the page underneath this parent.
  */
 add_action('admin_menu', static function (): void {

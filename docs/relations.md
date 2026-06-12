@@ -31,8 +31,6 @@ Facade\Relation\Table::has_one(
     ?ACP\Sql\Alias $alias = null,
     ?ACP\Sql\JoinType $join_type = null
 ): TableRelationFactory
-
-Facade\Relation\Table::has_many(/* same args */): TableRelationFactory
 ```
 
 `$local_column` defaults to the primary key of the local table.
